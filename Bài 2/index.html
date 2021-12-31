@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+</head>
+
+<body>
+    <script>
+        let arr = [1, 2, 3, 4, 5, 6, 7, 9, 8, 11, 14];
+
+        function checkItem(item, array) {
+            let size = array.length;
+            let xacNhan = 0
+            for (let i = 0; i < size; i++) {
+                if (item === array[i]) {
+                    xacNhan = -1;
+                    break
+                } else {
+                    xacNhan = 1
+                }
+            }
+            if (xacNhan == -1) {
+                console.log('Item is in Array')
+            } else {
+                console.log('Item is not in Array!!!')
+            }
+
+        }
+        checkItem(2, arr)
+    </script>
+</body>
+
+</html>

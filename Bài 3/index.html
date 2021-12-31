@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3 Kiểm tra kí tự nguyên âm</title>
+</head>
+
+<body>
+    <script>
+        function checkNguyenAm(word) {
+            let arr = ['a', 'u', 'i', 'e', 'o'];
+            let size = arr.length;
+            let arr_1 = word.split('');
+            let size_1 = arr_1.length;
+            for (let i = 0; i < size; i++) {
+                for (let j = 0; j < size_1; j++) {
+                    if (arr[i] == arr_1[j]) {
+                        return true
+                    }
+                }
+            } return false
+        }
+        console.log(checkNguyenAm('khkh'))
+    </script>
+</body>
+
+</html>
